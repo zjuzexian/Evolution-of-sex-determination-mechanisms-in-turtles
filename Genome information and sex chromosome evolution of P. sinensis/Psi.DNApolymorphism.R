@@ -39,7 +39,7 @@ ggplot(subpai,aes(x=(BIN_START)/1e6,y=PI*1e4))+
         axis.text.y= element_text(size=15)) + 
   geom_vline(aes(xintercept=1.51),linetype=2) +
   geom_vline(aes(xintercept=3.17),linetype=2) +
-  geom_vline(aes(xintercept=8),linetype=2) +
+  geom_vline(aes(xintercept=10.4),linetype=2) +
   geom_vline(aes(xintercept=12.5),linetype=2) +
   geom_hline(aes(yintercept = mean(subset(subpai, strata == "S1")$PI*1e4)))+
   geom_hline(aes(yintercept = mean(subset(subpai, strata == "S0")$PI*1e4)))+
